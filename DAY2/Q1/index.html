@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Tabs</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Dashboard</h1>
+        
+        <div class="tabs">
+            <button class="tab-btn active" data-tab="overview">Overview</button>
+            <button class="tab-btn" data-tab="details">Details</button>
+            <button class="tab-btn" data-tab="settings">Settings</button>
+        </div>
+
+        <div class="tab-content active" id="overview">
+            <h2>Overview</h2>
+            <p>Welcome to your dashboard overview. Here you can see key metrics and important information.</p>
+            <ul>
+                <li>Total Users: 1,234</li>
+                <li>Revenue: $45,600</li>
+                <li>Active Sessions: 456</li>
+            </ul>
+        </div>
+
+        <div class="tab-content" id="details">
+            <h2>Details</h2>
+            <p>Detailed information about your account and recent activities.</p>
+            <ul>
+                <li>Account: Adnan Hossain</li>
+                <li>Email: Adnan@gmail.com</li>
+                <li>Created: January 15, 2024</li>
+            </ul>
+        </div>
+
+        <div class="tab-content" id="settings">
+            <h2>Settings</h2>
+            <p>Manage your preferences and security settings.</p>
+            <label>
+                <input type="checkbox" checked> Email Notifications
+            </label>
+            <br>
+            <label>
+                <input type="checkbox" checked> Push Notifications
+            </label>
+            <br>
+            <label>
+                <input type="checkbox"> SMS Alerts
+            </label>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
