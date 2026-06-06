@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+</head>
+
+<body>
+
+    <h2>Todo Application</h2>
+
+    <input type="text" id="taskInput" placeholder="Enter task">
+
+    <button onclick="addTask()">Add Task</button>
+
+    <br><br>
+
+    <button onclick="showTasks('all')">All</button>
+
+    <button onclick="showTasks('active')">Active</button>
+
+    <button onclick="showTasks('completed')">Completed</button>
+
+    <br><br>
+
+    <ul id="taskList"></ul>
+
+    <h3>
+        Remaining Active Tasks :
+        <span id="taskCount">0</span>
+    </h3>
+
+    <script src="./script.js"></script>
+
+</body>
+</html>
