@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twitter-like Input Component</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <h1>Share Your Thoughts</h1>
+            <p class="subtitle">Maximum 200 characters</p>
+            
+            <div class="input-wrapper">
+                <textarea 
+                    id="contentInput" 
+                    class="textarea"
+                    placeholder="What's on your mind? Share your review or thoughts..."
+                    maxlength="200"
+                ></textarea>
+                
+                <div class="footer">
+                    <div class="char-counter">
+                        <span id="charCount">0</span><span class="total-chars">/200</span>
+                    </div>
+                    <button id="submitBtn" class="submit-btn">Post</button>
+                </div>
+            </div>
+
+            <div id="warningMsg" class="warning-message" style="display: none;">
+                You've reached the character limit!
+            </div>
+        </div>
+
+        <div id="successMsg" class="success-message" style="display: none;">
+            <p>✓ Your post has been submitted successfully!</p>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
