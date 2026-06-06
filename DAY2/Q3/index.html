@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kanban Board</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <h1>Team Kanban Board</h1>
+    <p>Drag tasks from one column to another</p>
+
+    <div class="board">
+      <section class="column">
+        <h2>To Do</h2>
+        <div class="task-list">
+          <div class="card" draggable="true">Design homepage</div>
+          <div class="card" draggable="true">Create database</div>
+          <div class="card" draggable="true">Write documentation</div>
+        </div>
+      </section>
+
+      <section class="column">
+        <h2>In Progress</h2>
+        <div class="task-list">
+          <div class="card" draggable="true">Build login page</div>
+          <div class="card" draggable="true">Test API</div>
+        </div>
+      </section>
+
+      <section class="column">
+        <h2>Done</h2>
+        <div class="task-list">
+          <div class="card" draggable="true">Plan project</div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
