@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Q4 Infinite Scroll Skeleton</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="page">
+    <section class="feed" aria-labelledby="feed-title">
+      <header class="feed-header">
+        <div>
+          <p class="eyebrow">Question 4</p>
+          <h1 id="feed-title">Infinite Scroll Skeleton Loader</h1>
+        </div>
+        <div class="controls" aria-label="Scroll controls">
+          <button id="scrollDown" type="button">Scroll Down</button>
+          <button id="scrollTop" type="button">Top</button>
+          <button id="pauseAnimation" type="button" aria-pressed="false">Pause</button>
+        </div>
+      </header>
+
+      <p class="status" id="status" aria-live="polite">Showing sample feed cards with loading placeholders below.</p>
+
+      <div class="scroll-frame" id="scrollFrame" aria-label="Loading feed preview" tabindex="0">
+        <div class="scroll-track" id="scrollTrack">
+          <article class="sample-card">
+            <div class="sample-avatar">A</div>
+            <div class="sample-content">
+              <div class="sample-meta">Aarav Sharma • 2 min ago</div>
+              <h2>Frontend assignment dashboard is ready</h2>
+              <p>The todo app, character counter, carousel, and skeleton loader are arranged in separate folders for Git upload.</p>
+              <div class="sample-banner banner-blue"></div>
+              <div class="tags">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="sample-card">
+            <div class="sample-avatar coral">N</div>
+            <div class="sample-content">
+              <div class="sample-meta">Neha Patel • 8 min ago</div>
+              <h2>Image carousel interaction checked</h2>
+              <p>Next, previous, dot indicators, auto-slide timing, and hover pause are available in the product viewer.</p>
+              <div class="sample-banner banner-coral"></div>
+              <div class="tags">
+                <span>Carousel</span>
+                <span>Slider</span>
+                <span>UI</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="sample-card">
+            <div class="sample-avatar gold">R</div>
+            <div class="sample-content">
+              <div class="sample-meta">Riya Mehta • 14 min ago</div>
+              <h2>Character counter warning state</h2>
+              <p>The input turns from normal to warning and danger colors as the 200 character limit gets closer.</p>
+              <div class="sample-banner banner-gold"></div>
+              <div class="tags">
+                <span>Textarea</span>
+                <span>Counter</span>
+                <span>Limit</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="sample-card">
+            <div class="sample-avatar green">K</div>
+            <div class="sample-content">
+              <div class="sample-meta">Kabir Singh • 19 min ago</div>
+              <h2>Todo list update finished</h2>
+              <p>Tasks can be created, edited inline, completed, restored, and deleted from the daily task list.</p>
+              <div class="sample-banner banner-green"></div>
+              <div class="tags">
+                <span>Todo</span>
+                <span>Inline Edit</span>
+                <span>CRUD</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="skeleton-card">
+            <div class="avatar skeleton"></div>
+            <div class="content">
+              <div class="line title skeleton"></div>
+              <div class="line short skeleton"></div>
+              <div class="media skeleton"></div>
+              <div class="line skeleton"></div>
+              <div class="line medium skeleton"></div>
+            </div>
+          </article>
+
+          <article class="skeleton-card">
+            <div class="avatar skeleton"></div>
+            <div class="content">
+              <div class="line title skeleton"></div>
+              <div class="line short skeleton"></div>
+              <div class="media compact skeleton"></div>
+              <div class="line skeleton"></div>
+              <div class="line medium skeleton"></div>
+            </div>
+          </article>
+
+          <article class="skeleton-card">
+            <div class="avatar skeleton"></div>
+            <div class="content">
+              <div class="line title skeleton"></div>
+              <div class="line short skeleton"></div>
+              <div class="media skeleton"></div>
+              <div class="line skeleton"></div>
+              <div class="line medium skeleton"></div>
+            </div>
+          </article>
+
+          <article class="skeleton-card">
+            <div class="avatar skeleton"></div>
+            <div class="content">
+              <div class="line title skeleton"></div>
+              <div class="line short skeleton"></div>
+              <div class="media compact skeleton"></div>
+              <div class="line skeleton"></div>
+              <div class="line medium skeleton"></div>
+            </div>
+          </article>
+
+          <article class="skeleton-card duplicate">
+            <div class="avatar skeleton"></div>
+            <div class="content">
+              <div class="line title skeleton"></div>
+              <div class="line short skeleton"></div>
+              <div class="media skeleton"></div>
+              <div class="line skeleton"></div>
+              <div class="line medium skeleton"></div>
+            </div>
+          </article>
+
+          <article class="skeleton-card duplicate">
+            <div class="avatar skeleton"></div>
+            <div class="content">
+              <div class="line title skeleton"></div>
+              <div class="line short skeleton"></div>
+              <div class="media compact skeleton"></div>
+              <div class="line skeleton"></div>
+              <div class="line medium skeleton"></div>
+            </div>
+          </article>
+
+          <article class="skeleton-card duplicate">
+            <div class="avatar skeleton"></div>
+            <div class="content">
+              <div class="line title skeleton"></div>
+              <div class="line short skeleton"></div>
+              <div class="media skeleton"></div>
+              <div class="line skeleton"></div>
+              <div class="line medium skeleton"></div>
+            </div>
+          </article>
+
+          <article class="skeleton-card duplicate">
+            <div class="avatar skeleton"></div>
+            <div class="content">
+              <div class="line title skeleton"></div>
+              <div class="line short skeleton"></div>
+              <div class="media compact skeleton"></div>
+              <div class="line skeleton"></div>
+              <div class="line medium skeleton"></div>
+            </div>
+          </article>
+
+          <div class="bottom-loader" aria-hidden="true">
+            <span class="dot-loader"></span>
+            <span class="dot-loader"></span>
+            <span class="dot-loader"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <template id="cardTemplate">
+    <article class="skeleton-card">
+      <div class="avatar skeleton"></div>
+      <div class="content">
+        <div class="line title skeleton"></div>
+        <div class="line short skeleton"></div>
+        <div class="media skeleton"></div>
+        <div class="line skeleton"></div>
+        <div class="line medium skeleton"></div>
+      </div>
+    </article>
+  </template>
+
+  <template id="sampleTemplate">
+    <article class="sample-card">
+      <div class="sample-avatar">S</div>
+      <div class="sample-content">
+        <div class="sample-meta"></div>
+        <h2></h2>
+        <p></p>
+        <div class="sample-banner"></div>
+        <div class="tags">
+          <span>Sample</span>
+          <span>Scroll</span>
+          <span>Loaded</span>
+        </div>
+      </div>
+    </article>
+  </template>
+
+  <script src="script.js"></script>
+</body>
+</html>

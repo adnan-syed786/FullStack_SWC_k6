@@ -1,0 +1,130 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --bg: #f4f7fb;
+  --card: #ffffff;
+  --text: #1f2937;
+  --muted: #667085;
+  --line: #d7e0ea;
+  --brand: #2868b7;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--text);
+  background: var(--bg);
+}
+
+.page {
+  width: min(680px, calc(100% - 32px));
+  min-height: 100vh;
+  margin: 0 auto;
+  display: grid;
+  place-items: start center;
+  padding: 72px 0;
+}
+
+.search-card {
+  width: 100%;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 28px;
+  background: var(--card);
+  box-shadow: 0 24px 58px rgba(31, 41, 55, 0.12);
+}
+
+.eyebrow {
+  margin: 0 0 8px;
+  color: var(--brand);
+  font-size: 12px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+h1 {
+  margin: 0 0 8px;
+  font-size: 34px;
+}
+
+.intro {
+  margin: 0 0 22px;
+  color: var(--muted);
+  line-height: 1.55;
+}
+
+.combobox {
+  position: relative;
+  display: grid;
+  gap: 8px;
+}
+
+label {
+  font-weight: 800;
+}
+
+input {
+  min-height: 48px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 0 14px;
+  font: inherit;
+}
+
+input:focus {
+  border-color: var(--brand);
+  outline: 3px solid rgba(40, 104, 183, 0.18);
+}
+
+.suggestions {
+  position: absolute;
+  z-index: 5;
+  top: calc(100% + 8px);
+  left: 0;
+  right: 0;
+  max-height: 280px;
+  overflow-y: auto;
+  margin: 0;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 6px;
+  background: #ffffff;
+  box-shadow: 0 18px 42px rgba(31, 41, 55, 0.12);
+  list-style: none;
+}
+
+.suggestions[hidden] {
+  display: none;
+}
+
+.suggestions li {
+  border-radius: 6px;
+  padding: 11px 12px;
+  cursor: pointer;
+  font-weight: 800;
+}
+
+.suggestions li:hover,
+.suggestions li.is-highlighted {
+  color: #ffffff;
+  background: var(--brand);
+}
+
+.selection {
+  margin: 70px 0 0;
+  color: var(--muted);
+  font-weight: 800;
+}
+
+@media (max-width: 560px) {
+  .page {
+    padding-top: 32px;
+  }
+
+  .search-card {
+    padding: 22px;
+  }
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Q8 Debounced Search</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="page">
+    <section class="search-panel" aria-labelledby="search-title">
+      <p class="eyebrow">Question 8</p>
+      <h1 id="search-title">Optimized Live Search</h1>
+      <p class="intro">Filter products in real time while a 300ms debounce limits unnecessary computations.</p>
+
+      <div class="search-box">
+        <label for="searchInput">Search products</label>
+        <input id="searchInput" type="search" placeholder="Try laptop, camera, shoes, kitchen..." autocomplete="off">
+      </div>
+
+      <div class="search-stats">
+        <span id="resultCount" aria-live="polite">0 results</span>
+        <span id="computeCount">Computations: 0</span>
+      </div>
+
+      <ul class="results" id="results" aria-label="Filtered product results"></ul>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

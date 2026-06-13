@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Q9 Amazon Homepage Clone</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="top-nav container flex align-center gap-md" aria-label="Primary navigation">
+      <a class="brand" href="#" aria-label="AmaClone home">AmaClone</a>
+
+      <button class="location-button hide-sm" type="button">
+        <span>Deliver to</span>
+        <strong>New Delhi 110001</strong>
+      </button>
+
+      <form class="search-bar" role="search">
+        <select aria-label="Search category">
+          <option>All</option>
+          <option>Electronics</option>
+          <option>Fashion</option>
+          <option>Home</option>
+        </select>
+        <input type="search" placeholder="Search AmaClone" aria-label="Search AmaClone">
+        <button type="submit">Search</button>
+      </form>
+
+      <div class="account-links hide-md">
+        <a href="#">Hello, sign in</a>
+        <a href="#">Returns</a>
+        <a class="cart-link" href="#">Cart <span>3</span></a>
+      </div>
+
+      <button class="menu-toggle" id="menuToggle" type="button" aria-expanded="false" aria-controls="quickNav">Menu</button>
+    </nav>
+
+    <div class="quick-nav" id="quickNav">
+      <div class="container flex gap-md wrap">
+        <a href="#">All</a>
+        <a href="#">Today's Deals</a>
+        <a href="#">Customer Service</a>
+        <a href="#">Registry</a>
+        <a href="#">Gift Cards</a>
+        <a href="#">Sell</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-content">
+        <p class="pill">Great Indian Sale</p>
+        <h1>Shop deals across electronics, fashion, home, and daily essentials.</h1>
+        <p>Responsive ecommerce homepage layout with reusable utilities, product sections, and adaptive cards.</p>
+        <a class="btn btn-primary" href="#deals">Explore Deals</a>
+      </div>
+    </section>
+
+    <section class="container section-grid">
+      <article class="card category-card">
+        <h2>Upgrade your workspace</h2>
+        <div class="product-mosaic">
+          <div class="product-art laptop" aria-label="Laptop and desk accessories"></div>
+          <div class="product-art headphones" aria-label="Headphones"></div>
+          <div class="product-art keyboard" aria-label="Keyboard"></div>
+          <div class="product-art lamp" aria-label="Desk lamp"></div>
+        </div>
+        <a href="#">See more</a>
+      </article>
+
+      <article class="card category-card">
+        <h2>Fashion picks</h2>
+        <div class="product-mosaic">
+          <div class="product-art shoes" aria-label="Running shoes"></div>
+          <div class="product-art watch" aria-label="Smart watch"></div>
+          <div class="product-art bag" aria-label="Travel backpack"></div>
+          <div class="product-art jacket" aria-label="Casual jacket"></div>
+        </div>
+        <a href="#">Shop fashion</a>
+      </article>
+
+      <article class="card category-card">
+        <h2>Kitchen essentials</h2>
+        <div class="product-mosaic">
+          <div class="product-art pan" aria-label="Cookware"></div>
+          <div class="product-art bottle" aria-label="Water bottle"></div>
+          <div class="product-art mixer" aria-label="Mixer appliance"></div>
+          <div class="product-art plates" aria-label="Dinner plates"></div>
+        </div>
+        <a href="#">Discover home</a>
+      </article>
+
+      <article class="card sign-in-card">
+        <h2>Sign in for your best experience</h2>
+        <button class="btn btn-primary" type="button">Sign in securely</button>
+        <div class="mini-banner">
+          <span>Free delivery on eligible orders</span>
+        </div>
+      </article>
+    </section>
+
+    <section class="container deals-section" id="deals" aria-labelledby="deals-title">
+      <div class="section-title flex align-center justify-between gap-md">
+        <div>
+          <p class="eyebrow">Trending</p>
+          <h2 id="deals-title">Deals inspired by your shopping</h2>
+        </div>
+        <a href="#">View all</a>
+      </div>
+
+      <div class="deal-row">
+        <article class="deal-card">
+          <div class="deal-image laptop"></div>
+          <p class="deal-badge">27% off</p>
+          <h3>Everyday Laptop Pro</h3>
+          <p class="price">$899</p>
+        </article>
+        <article class="deal-card">
+          <div class="deal-image headphones"></div>
+          <p class="deal-badge">Limited deal</p>
+          <h3>Wireless Headphones</h3>
+          <p class="price">$149</p>
+        </article>
+        <article class="deal-card">
+          <div class="deal-image shoes"></div>
+          <p class="deal-badge">Best seller</p>
+          <h3>Running Shoes</h3>
+          <p class="price">$64</p>
+        </article>
+        <article class="deal-card">
+          <div class="deal-image pan"></div>
+          <p class="deal-badge">Deal of the day</p>
+          <h3>Cookware Set</h3>
+          <p class="price">$112</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container grid footer-grid">
+      <div>
+        <h2>Get to know us</h2>
+        <a href="#">About AmaClone</a>
+        <a href="#">Careers</a>
+      </div>
+      <div>
+        <h2>Make money with us</h2>
+        <a href="#">Sell products</a>
+        <a href="#">Advertise</a>
+      </div>
+      <div>
+        <h2>Let us help you</h2>
+        <a href="#">Your account</a>
+        <a href="#">Help center</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

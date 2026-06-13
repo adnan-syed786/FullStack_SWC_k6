@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Q11 API Retry Handler</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="page">
+    <section class="retry-card" aria-labelledby="retry-title">
+      <p class="eyebrow">Question 11</p>
+      <h1 id="retry-title">API Retry Handler</h1>
+      <p class="intro">Automatically retry failed API requests up to 3 times, then show a clear error if every attempt fails.</p>
+
+      <div class="controls">
+        <button id="startSuccess" type="button">Run Recovering Request</button>
+        <button id="startFailure" class="secondary" type="button">Run Always-Failing Request</button>
+      </div>
+
+      <div class="status-box" id="statusBox" aria-live="polite">Choose a request scenario to begin.</div>
+
+      <ol class="attempt-list" id="attemptList" aria-label="Request attempts"></ol>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
